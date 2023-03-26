@@ -1,0 +1,27 @@
+mixin advantagesItem(src, title)
+	.advantages__item
+		.advantages__icon
+			//- img(src="img/advantages/"+src, alt="")
+			img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/advantages/"+src, alt="").b-lazy
+		.advantages__title #{title}
+
+section.advantages
+	.container.advantages__container
+		h3.advantages__title Бесплатно для клиентов
+		.advantages__box
+			.advantages__item
+				.advantages__icon
+					img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/advantages/01.png", alt="").b-lazy
+				.advantages__text Выезд менеджера <br> в офис для замеров
+			.advantages__item
+				.advantages__icon
+					img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/advantages/02.png", alt="").b-lazy
+				.advantages__text Разработка <br> 3D дизайн-проект
+			.advantages__item
+				.advantages__icon
+					img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/advantages/03.png", alt="").b-lazy
+				.advantages__text Доставка, подъем <br> и сборка мебели
+			.advantages__item.advantages__item--last
+				.advantages__icon
+					img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/advantages/04.png", alt="").b-lazy
+				.advantages__text Мебель на складе, самовывоз <br> на следующий день

@@ -1,0 +1,20 @@
+mixin projectsSlider(src)
+	li.slider-two-columns__item.swiper-slide
+		a(href="img/slider-two-columns/"+src data-fslightbox="slider-two-columns").slider-two-columns__link
+			img(src="img/slider-two-columns/"+src alt="" loading="lazy").slider-two-columns__img
+
+section.slider-two-columns
+	.full-container
+		h2.section-header.slider-two-columns__title Примеры 3D проектов
+	.full-container.slider-two-columns__container
+		.slider-two-columns__box.swiper
+			ul.slider-two-columns__list.swiper-wrapper
+				+projectsSlider('01.jpg')
+				+projectsSlider('02.jpg')
+				+projectsSlider('01.jpg')
+				+projectsSlider('02.jpg')
+				+projectsSlider('01.jpg')
+				+projectsSlider('02.jpg')
+		.slider-two-columns__pagination
+		.slider-two-columns__prev
+		.slider-two-columns__next

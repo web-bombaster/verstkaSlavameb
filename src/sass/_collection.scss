@@ -1,0 +1,166 @@
+@use "sass:math";
+.collection {
+	margin-top: 34px;
+	margin-bottom: 163px;
+
+	@media (max-width: $break_sm) {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+}
+
+.collection__container {
+
+}
+
+.collection__title {
+	max-width: 100%;
+}
+
+.collection__item-title {
+	position: relative;
+	padding-right: 35px;
+	padding-bottom: 38px;
+
+	&::after {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+
+		width: 27px;
+		height: 27px;
+		background-image: url(../img/popular-arrov.svg);
+		background-repeat: no-repeat;
+		background-position: center right;
+		background-size: 27px;
+		overflow: hidden;
+
+		transition: .25s;
+
+		@media (max-width: $break_sm) {
+			// padding-bottom: 38px;
+
+			right: 0;
+			left: auto;
+			bottom: auto;
+			top: -3px;
+		}
+
+		.collection__item:hover & {
+			width: 20px;
+			right: 7px;
+		}
+	}
+
+}
+
+.collection__slider {
+	min-width: 0;
+}
+
+.collection__box {
+	display: flex;
+	flex-wrap: wrap; //-
+	gap: 36px; //-
+	// justify-content: space-between;
+
+	min-width: 0;
+	min-width: 100%;
+
+	// margin-top: 40px;
+	margin-bottom: 40px;
+
+	@media (max-width: $break_lg) {
+		gap: 20px;
+	}
+
+	@media (max-width: $break_md) {
+		gap: 10px;
+	}
+
+	min-width: 0;
+
+	.collection__slider & {
+		flex-wrap: nowrap;
+		gap: 0; //-
+
+		@media (max-width: $break_lg) {
+			gap: 0;
+		}
+
+		@media (max-width: $break_md) {
+			gap: 0;
+		}
+	}
+}
+
+.collection__item {
+	padding-bottom: 40px;
+
+	position: relative;
+	flex-basis: calc(25% - 3/4*36px);
+	align-self: flex-start;
+
+	font-size: 20px;
+	font-weight: 500;
+
+	@media (max-width: $break_lg) {
+		min-width: calc(33.333% - 2/3*20px);
+		flex-basis: calc(33.333% - 2/3*20px);
+	}
+
+	@media (max-width: $break_md) {
+		min-width: calc(50% - 1/2*10px);
+		flex-basis: calc(50% - 1/2*10px);
+	}
+
+	@media (max-width: $break_sm) {
+		// min-width: 50%;
+		// max-width: calc(50% - 1/2*20px);
+		font-size: 18px;
+	}
+
+	@media (max-width: $break_xs) {
+		min-width: 100%;
+	}
+
+	&:hover {
+		&::after {
+			width: 20px;
+		}
+	}
+
+	// &::after {
+	// 	position: absolute;
+	// 	content: '';
+
+	// 	left: 0px;
+	// 	bottom: 0px;
+
+	// 	width: 27px;
+	// 	height: 27px;
+	// 	background-image: url(../img/popular-arrov.svg);
+	// 	background-repeat: no-repeat;
+	// 	background-position: center right;
+	// 	background-size: 27px;
+	// 	overflow: hidden;
+
+	// 	transition: .25s;
+	// }
+}
+
+.collection__img-box {
+	margin-bottom: 18px;
+	overflow: hidden;
+}
+
+.collection__img {
+	display: block;
+	width: 100%;
+	transition: .25s;
+
+	.collection__item &:hover {
+		transform: scale(1.015);
+	}
+}

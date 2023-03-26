@@ -1,0 +1,82 @@
+// col nav__col - ul
+// row nav__row - div
+
+mixin nav__item(link, title)
+	li.nav__item
+		a.nav__link(href="link") #{title}
+
+mixin navItemTitle(link, title)
+	li.nav__item--title
+		a.nav__link--title(href="link") #{title}
+
+mixin submenuItem(link, title)
+	li.submenu__item
+		a.submenu__link(href="link") #{title}
+
+
+nav.nav__box
+
+	//- .container.nav__container
+	ul.nav__list
+
+		//- +nav__item('#', 'Офисная мебель')
+		li.nav__item
+			a.nav__link.nav__link--open-panel(href="#") Офисная мебель
+
+			//- .nav__panel.active
+
+			ul.col.nav__col
+				li.nav__item--title
+					a.nav__link--title(href="#") Для персонала
+
+					ul.nav__submenu.submenu
+						+submenuItem('#', 'Эконом')
+						+submenuItem('#', 'Стандарт')
+						+submenuItem('#', 'Бизнес')
+
+			ul.col.nav__col
+				li.nav__item--title
+					a.nav__link--title(href="#") Мягкая мебель
+
+					ul.nav__submenu.submenu
+						+submenuItem('#', 'Современная')
+						+submenuItem('#', 'Классическая')
+
+			ul.col.nav__col
+				+navItemTitle('#', 'Ресепшн')
+				+navItemTitle('#', 'Перегородки')
+				+navItemTitle('#', 'Для гостиниц')
+
+			ul.col.nav__col
+				li.nav__item--title
+					a.nav__link--title(href="#") Для руководителя
+
+					ul.nav__submenu.submenu
+						+submenuItem('#', 'Эконом')
+						+submenuItem('#', 'Бизнес')
+						+submenuItem('#', 'Премиум')
+
+			ul.col.nav__col
+				li.nav__item--title
+					a.nav__link--title(href="#") Стулья и кресла
+
+					ul.nav__submenu.submenu
+						+submenuItem('#', 'Дизайнерские')
+						+submenuItem('#', 'Компьютерные')
+						+submenuItem('#', 'Конференц')
+						+submenuItem('#', 'Офисные')
+
+			ul.col.nav__col
+				li.nav__item--title
+					a.nav__link--title(href="#") Благоустройство офиса
+
+					ul.nav__submenu.submenu
+						+submenuItem('#', 'Кухни для офиса')
+						+submenuItem('#', 'Металлическая мебель')
+
+		+nav__item('#', 'О компании')
+		+nav__item('#', 'Доставка и сборка')
+		+nav__item('#', 'Готовые проекты')
+		+nav__item('#', 'Отзывы')
+		+nav__item('#', 'Контакты')
+

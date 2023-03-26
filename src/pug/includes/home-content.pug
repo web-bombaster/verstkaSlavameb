@@ -1,0 +1,35 @@
+section.home-content
+	.full-container
+		//- img(src="img/home-content/home-content.jpg", alt="").home-content__img
+
+		//- picture.home-content__img
+			source(media="(max-width: 480px)" srcset="img/home-content/home-content-min.jpg")
+			source(media="(max-width: 992px)" srcset="img/home-content/home-content-med.jpg")
+			img(src="img/home-content/home-content.jpg", alt="")
+
+		.home-content__img-box
+			img.home-content__img.b-lazy(src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' data-src='img/home-content/home-content.jpg' data-src-small='img/home-content/home-content-min.jpg' data-src-medium='img/home-content/home-content-med.jpg' alt='alt')
+
+
+	.container.home-content__container
+		h2.section-header.home-content__title Где купить недорогую офисную мебель?
+		.home-content__box.two-columns
+			p В интернет-каталоге на нашем сайте вы можете самостоятельно подобрать комплект с помощью фото и видео обзоров. Узнать стоимость и заказать понравившуюся продукцию можно по номеру телефона <a href="tel:+78632869977">8 (863) 286-99-77</a> по адресу: пр. Шолохова, 16. Наш салон работает по будням с 9 до 18 часов.
+
+			.hidden-text
+				.no-transfer-column
+					h3 Больше, чем вы ожидаете
+					p На официальном сайте нашей компании только изделия высокого качества от различных производителей. Правильно сконструированные и качественно изготовленные, они:
+
+					ul
+						li Повышают производительность персонала, давая ему возможность более эффективно выполнять свою работу.
+						li Обеспечивают порядок в делопроизводстве, позволяя упорядочено размещать документы и канцелярские принадлежности.
+						li Формируют имидж фирмы в глазах посетителей и партнеров.
+
+				p Собираясь приобрести что-то для интерьера организации, больших и малых предприятий, следует помнить, что чрезмерная экономия здесь неуместна. Требуется оптимальное соотношение цены и качества.
+				p У нас продается продукция крупных отечественных и зарубежных фабрик с соответствующими сертификатами и гарантией. Мы сотрудничаем более чем с 20 лидерами в сфере мебельного производства.
+
+			//- a(href="#").show-text Читать далее
+			button.show-text Читать далее
+
+

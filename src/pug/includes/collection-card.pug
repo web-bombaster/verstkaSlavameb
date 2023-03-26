@@ -1,0 +1,82 @@
+mixin collectionMiniSlider(src)
+	img(src="img/collection-slider/big/"+src alt="" loading="lazy").collection-mini-slider__item.swiper-slide
+
+mixin collectionBigSlider(src)
+	img(src="img/collection-slider/big/"+src alt="" loading="lazy").collection-big-slider__item.swiper-slide
+
+//- mixin collectionBigSlider(src)
+	a(href="#").swiper-slide.collection-big-slider__item
+		img(src="img/collection-slider/big/"+src alt="" loading="lazy")
+
+mixin colorsCollectionImg(src, colorName)
+	a(data-colorName=""+colorName).colors-collection__item
+		img(src="img/collection-colors/"+src alt="" loading="lazy").colors-collection__img
+
+	//- img(src="img/collection-slider/big/"+src alt="" loading="lazy").collection-big-slider__item.swiper-slide
+
+
+.collection-card
+	.container.collection-card__container
+		.collection-card__box
+			.collection-card__photo
+				.collection-card__col.collection-card__col--thumb
+					.collection-card__mini-slider.collection-mini-slider.swiper
+						.collection-mini-slider__wrapper.swiper-wrapper
+							+collectionMiniSlider('01.jpg')
+							+collectionMiniSlider('02.jpg')
+							+collectionMiniSlider('03.jpg')
+							+collectionMiniSlider('04.jpg')
+							+collectionMiniSlider('01.jpg')
+							+collectionMiniSlider('02.jpg')
+							+collectionMiniSlider('03.jpg')
+							+collectionMiniSlider('04.jpg')
+					.collection-mini-slider__prev
+					.collection-mini-slider__next
+
+				.collection-card__col.collection-card__col--photo
+					.collection-card__big-slider.collection-big-slider.swiper
+						.collection-big-slider__wrapper.swiper-wrapper
+							+collectionBigSlider('01.jpg')
+							+collectionBigSlider('02.jpg')
+							+collectionBigSlider('03.jpg')
+							+collectionBigSlider('04.jpg')
+							+collectionBigSlider('01.jpg')
+							+collectionBigSlider('02.jpg')
+							+collectionBigSlider('03.jpg')
+							+collectionBigSlider('04.jpg')
+					.collection-big-slider__prev
+					.collection-big-slider__next
+					.collection-big-slider__pagination
+
+
+			.collection-card__info
+				h1.collection-card__title(data-da="collection-card__container,0,768") Мебель «Васанта»
+
+				.collection-card__descr
+					p Производитель: Россия
+					p Материал: ЛДСП
+
+				.collection-card__price Цена от: 12 800 ₽
+
+				a(href="#help").btn.collection-card__btn.btn--grren.smooth-scroll Уточнить стоимость
+
+				.collection-card__colors.colors-collection
+					| Доступные цвета:
+
+					.colors-collection__box
+						a(href="#" data-colorName="Дуб Кентербери").colors-collection__item.active
+							img(src="img/collection-colors/01.png" alt="" loading="lazy").colors-collection__img
+
+						+colorsCollectionImg('02.png','Молочный дуб')
+						+colorsCollectionImg('03.png','Итальянский орех')
+						+colorsCollectionImg('04.png','Светлый орех')
+
+					.collection-card__color Дуб Кентербери
+
+					.collection-card__links
+						a(href="#") Оптовикам
+						a(href="#") Госучреждениям
+						a(href="#") Дизайнерам
+
+
+

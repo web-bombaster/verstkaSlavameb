@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>Славянка</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+    <script src="js/scripts.min.js" defer></script>
+  </head>
+  <body>
+    <div class="visible" id="preloader"></div>
+    <header class="header">
+      <div class="full-container header__container">
+        <button class="header__menu-btn" type="button" aria-label="Меню сайта"><span></span></button>
+        <div class="header__info header-info"><a class="header-info__link no-cart" href="#">Почему у нас нет корзины</a><a class="header-info__link" href="#">Распродажа %</a></div><a class="header__logo logo" href=""><img src="./img/logo.png" alt="">Славянка</a>
+        <div class="header__contacts header-contacts"><a class="header-contacts__phone" href="tel:+78632869977">+7 (863) 286-99-77</a><a class="header-contacts__address" href="#">Ростов-на-Дону<span>, пр-т Шолохова, 16</span></a></div>
+      </div>
+    </header>
+    <div class="nav">
+      <div class="container nav__container">
+        <!-- col nav__col - ul-->
+        <!-- row nav__row - div-->
+        <nav class="nav__box">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link nav__link--open-panel" href="#">Офисная мебель</a>
+              <ul class="col nav__col">
+                <li class="nav__item--title"><a class="nav__link--title" href="#">Для персонала</a>
+                  <ul class="nav__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="link">Эконом</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Стандарт</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Бизнес</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="col nav__col">
+                <li class="nav__item--title"><a class="nav__link--title" href="#">Мягкая мебель</a>
+                  <ul class="nav__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="link">Современная</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Классическая</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="col nav__col">
+                        <li class="nav__item--title"><a class="nav__link--title" href="link">Ресепшн</a></li>
+                        <li class="nav__item--title"><a class="nav__link--title" href="link">Перегородки</a></li>
+                        <li class="nav__item--title"><a class="nav__link--title" href="link">Для гостиниц</a></li>
+              </ul>
+              <ul class="col nav__col">
+                <li class="nav__item--title"><a class="nav__link--title" href="#">Для руководителя</a>
+                  <ul class="nav__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="link">Эконом</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Бизнес</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Премиум</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="col nav__col">
+                <li class="nav__item--title"><a class="nav__link--title" href="#">Стулья и кресла</a>
+                  <ul class="nav__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="link">Дизайнерские</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Компьютерные</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Конференц</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Офисные</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="col nav__col">
+                <li class="nav__item--title"><a class="nav__link--title" href="#">Благоустройство офиса</a>
+                  <ul class="nav__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="link">Кухни для офиса</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Металлическая мебель</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+                    <li class="nav__item"><a class="nav__link" href="link">О компании</a></li>
+                    <li class="nav__item"><a class="nav__link" href="link">Доставка и сборка</a></li>
+                    <li class="nav__item"><a class="nav__link" href="link">Готовые проекты</a></li>
+                    <li class="nav__item"><a class="nav__link" href="link">Отзывы</a></li>
+                    <li class="nav__item"><a class="nav__link" href="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="open-search" aria-label="Поиск по сайту"></button>
+      </div>
+      <div class="search">
+        <div class="container search__container">
+          <div class="search__box">
+            <form class="search-form" action="/search" method="GET">
+              <input class="search-field" type="search" name="search" placeholder="Искать, например, кресло компьютерное">
+              <button class="btn-search" type="submit" aria-label="Найти"></button>
+              <button class="search-close" type="button" aria-label="Закрыть панель поиска"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="error-404">
+        <div class="container error-404__container">
+          <div class="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="#" itemprop="url"><span itemprop="title">На главную</span></a></div>
+          <div class="content error-404__content">
+            <div class="error-404__box">
+              <div class="error-404__nember">404</div>
+              <div class="error-404__error">ошибка</div>
+              <div class="error-404__text">Что-то пошло не так. Возможно, данная страница была удалена или перемещена</div><a class="btn btn--orange error-404__btn" href="#">Вернуться на главную</a>
+            </div>
+          </div>
+          <div class="error-404__img"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="full-container footer__container">
+        <div class="footer__col footer__first"><a class="footer__logo logo" href="#"><img src="img/logo.png" alt="">Славянка</a>
+          <div class="footer__copy" data-da="footer__container,last,768">2022 © ООО «Славянка» - Офисная мебель</div>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">Клиентам</div>
+          <ul class="footer__menu footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Офисная мебель</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Доставка и сборка</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Готовые проекты</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Отзывы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Распродажа %</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">Сотрудничество</div>
+          <ul class="footer__menu footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Оптовикам</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Госучреждениям</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Дизайнерам</a></li>
+          </ul>
+        </div>
+        <div class="footer__col" data-da="footer__first,1,992">
+          <ul class="footer__menu footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link no-cart" href="#">Почему у нас нет корзины</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer-contacts"><a class="footer__fhone" href="tel:+78632869977">+7 (863) 286-99-77</a><span class="footer__fhone-text">Многоканальный</span>
+          <p>Ростов-на-Дону, пр-т Шолохова, 16</p>
+          <div class="footer__map" data-da="footer__container,5,768">
+            <iframe class="b-lazy" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A1d24ac55db3ebcd2b7232dcd9d6b1d699f765a0df12a3a375627ce5235c569a9&amp;source=constructor" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

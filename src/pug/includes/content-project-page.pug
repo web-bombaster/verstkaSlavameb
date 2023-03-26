@@ -1,0 +1,59 @@
+
+mixin bigSliderItem(src)
+	li.pp-big-slider__item.swiper-slide
+		img(src="img/project-page/"+src, alt="").pp-big-slider__img
+
+mixin miniSliderItem(src)
+	li.pp-mini-slider__item.swiper-slide
+		img(src="img/project-page/"+src, alt="").pp-mini-slider__img
+
+.project-page
+	.container.project-page__container
+		.content.project-page__content
+			h1 ТивАгро
+			.project-page__sliders-box
+				.pp-big-slider.swiper
+					ul.pp-big-slider__wrapper.swiper-wrapper
+						+bigSliderItem('big-slider-01.jpg')
+						+bigSliderItem('big-slider-02.jpg')
+						+bigSliderItem('big-slider-03.jpg')
+						+bigSliderItem('big-slider-04.jpg')
+						+bigSliderItem('big-slider-01.jpg')
+						+bigSliderItem('big-slider-02.jpg')
+						+bigSliderItem('big-slider-03.jpg')
+						+bigSliderItem('big-slider-04.jpg')
+					.pp-big-slider__prev
+					.pp-big-slider__next
+					.pp-big-slider__pagination
+
+				.pp-mini-slider.swiper
+					ul.pp-mini-slider__wrapper.swiper-wrapper
+						+miniSliderItem('big-slider-01.jpg')
+						+miniSliderItem('big-slider-02.jpg')
+						+miniSliderItem('big-slider-03.jpg')
+						+miniSliderItem('big-slider-04.jpg')
+						+miniSliderItem('big-slider-01.jpg')
+						+miniSliderItem('big-slider-02.jpg')
+						+miniSliderItem('big-slider-03.jpg')
+						+miniSliderItem('big-slider-04.jpg')
+
+			.project-page__info
+				.project-page__descr
+					h2 Описание
+					p Наша компания разработала дизайн проекты и оснастила полностью офисной и мягкой мебелью кабинеты руководителей, кабинеты для персонала и зоны ожидания в новом открывшемся салоне ААА моторс Jaguar Land Rover. Очень рады, что компания обратилась именно нам!
+					p Дон Моторс – крупнейшая компания на рынке авторитейла на юге России, основанная в 2001 году в Ростове-на-Дону.
+					p Продает и обслуживает автомобили 10 брендов в 15 шоу-румах в Ростове-на-Дону, Краснодаре, Воронеже. За 15 лет работы клиентами ААА Моторс в продажах и сервисном обслуживании стали несколько тысяч человек. По данным отраслевого рейтинга «АвтоБизнесРевю» за 2015 год вошли в ТОП-40 дилерских холдингов России по общей выручке и в ТОП-25 по выручке от сервисных услуг.
+				.project-page__about
+					h2 В проекте использована мебель:
+					ul
+						li Мебель для Руководителя:&#32;
+							a(href="#") Верона, Vasanta руководитель
+						li Мебель для персонала:&#32;
+							a(href="#") Vasanta
+						li Мебель для приёмной зоны:&#32;
+							a(href="#") Бонус
+						li Мягкая мебель:&#32;
+							a(href="#") Рольф
+						li Кресла для посетителей:CH 760 М
+						li Кресла для посетителей: CH 760
+						li Стулья для посетителей: ERA chrom

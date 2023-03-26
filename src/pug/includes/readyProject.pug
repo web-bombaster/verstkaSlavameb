@@ -1,0 +1,52 @@
+mixin readyPprojectItem(title, src1, src2, src3, src4)
+	.ready-project__item.swiper-slide
+		.ready-project__imaeges.swiper
+			.swiper-wrapper
+				img(src="img/readyProject/"+src1, alt="").ready-project__img.swiper-slide
+			.ready-project__next
+			.ready-project__prev
+			.ready-project__pagination
+		a(href="#").ready-project__title #{title}
+		a(href="#").ready-project__action Смотреть коллекции мебели
+
+
+
+
+.ready-project
+	.ready-project__box
+		.ready-project__item
+			.ready-project__imaeges.swiper
+				.swiper-wrapper
+					img(src="img/readyProject/01.jpg", alt="").ready-project__img.swiper-slide
+					img(src="img/readyProject/03.jpg", alt="").ready-project__img.swiper-slide
+					img(src="img/readyProject/04.jpg", alt="").ready-project__img.swiper-slide
+				.ready-project__next
+				.ready-project__prev
+				.ready-project__pagination
+			a(href="#").ready-project__title Дон Моторс Jaguar Land Rover
+			a(href="#").ready-project__action Смотреть коллекции мебели
+		.ready-project__item.swiper-slide
+			.ready-project__imaeges.swiper
+				.swiper-wrapper
+					img(src="img/readyProject/02.jpg", alt="").ready-project__img.swiper-slide
+					img(src="img/readyProject/05.jpg", alt="").ready-project__img.swiper-slide
+					img(src="img/readyProject/06.jpg", alt="").ready-project__img.swiper-slide
+					img(src="img/readyProject/07.jpg", alt="").ready-project__img.swiper-slide
+				.ready-project__next
+				.ready-project__prev
+				.ready-project__pagination
+			a(href="#").ready-project__title Дон Эко
+			a(href="#").ready-project__action Смотреть коллекции мебели
+
+
+
+		//- +readyPprojectItem('Дон Моторс Jaguar Land Rover', '01.jpg')
+		//- +readyPprojectItem('Дон Эко', '02.jpg')
+		+readyPprojectItem('Вертол Девелопмент', '03.jpg')
+		+readyPprojectItem('Донские Традиции (проект Vestar)', '04.jpg')
+		+readyPprojectItem('ТивАгро', '05.jpg')
+		+readyPprojectItem('Донские Традиции', '06.jpg')
+		+readyPprojectItem('Ростгорсвет', '07.jpg')
+		+readyPprojectItem('Метроспецтехника', '08.jpg')
+
+	a(href="#").btn.ready-project__btn Загрузить еще

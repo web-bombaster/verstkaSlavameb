@@ -1,0 +1,15 @@
+mixin categoryItem(title)
+	a(href="#").category__item.category-item
+		//- .category__inner
+		span.category__title #{title}
+
+
+
+section.category
+	.full-container.category__container
+		h2.section-header.section-header--mini.category__title Офисная мебель для персонала
+		.category__box
+			+categoryItem('Эконом')
+			+categoryItem('Стандарт')
+			+categoryItem('Бизнес')
+			//- +categoryItem('Бизнес')

@@ -1,0 +1,27 @@
+mixin saleBigBanersItem(src, title)
+	a(href="#").sale-big-baners__item
+		img(src="img/sale/"+src, alt="").sale-big-baners__img
+		.sale-big-baners__title
+			span #{title}
+
+mixin saleMiniBanersItem(title)
+	a(href="#").sale-mini-baners__item
+		.sale-mini-baners__title
+			span #{title}
+
+
+.sale
+	.container.sale__container
+		.content
+			h1 Распродажа
+
+			.sale__box
+				.sale__big.sale-big-baners
+					+saleBigBanersItem('01.jpg', '% Успей купить')
+					+saleBigBanersItem('02.jpg', '% Ликвидация остатков склада')
+
+				.sale__mini.sale-mini-baners
+					+saleMiniBanersItem('Специальная цена на выставочные образцы')
+					+saleMiniBanersItem('Vasanta орех вирджиния')
+					+saleMiniBanersItem('Ликвидация остатков склада')
+

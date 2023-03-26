@@ -1,0 +1,47 @@
+mixin instrument-slider__item(src, href, title, descr)
+	//- a(href="href" style="background-image: url(../img/popular-categories/"+src+");").popular-categories__item.b-lazy
+	a(href="#" data-src="../img/popular-categories/"+src).popular-categories__item.b-lazy
+		.popular-categories__inner
+			.popular-categories__sub-title #{descr}
+			.popular-categories__title #{title}
+
+
+section.popular-categories
+	.full-container.popular-categories__container
+		h2.section-header.popular-categories__section-title Популярные категории
+		.popular-categories__box
+
+			+instrument-slider__item(
+				'01.jpg',
+				'#',
+				'Кабинет руководителя',
+				'Бизнес класс'
+			)
+
+			+instrument-slider__item(
+				'02.jpg',
+				'#',
+				'Офисные диваны',
+				''
+			)
+
+			+instrument-slider__item(
+				'03.jpg',
+				'#',
+				'Мягкая модульная система «toForm»',
+				''
+			)
+
+			+instrument-slider__item(
+				'04.jpg',
+				'#',
+				'Офисные перегородки',
+				''
+			)
+
+			+instrument-slider__item(
+				'05.jpg',
+				'#',
+				'Ресепшн',
+				''
+			)

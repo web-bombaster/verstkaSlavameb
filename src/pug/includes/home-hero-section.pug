@@ -1,0 +1,34 @@
+mixin slide(src)
+	.home-hero__slide-item.swiper-slide
+		//- img(src="../img/home-hero-slider/"+src, alt="").home-hero__slide-img
+		img(src="../img/home-hero-slider/"+src alt="" loading="lazy").home-hero__slide-img
+
+section.home-hero
+	.container.home-hero__container
+		.home-hero__info
+			.home-hero__box
+				h2.home-hero__title Магазин <br> офисной мебели на Шолохова, 16
+				p.home-hero__descr В наличии 14 серий мебели. Бесплатно предоставляем: 3D дизайн-проект, доставку, подъем и сборку мебели
+				a(href="#").btn.btn--grren.home-hero-section__btn Перейти
+		.home-hero__slider.swiper
+			.home-hero__slider-wrapper.swiper-wrapper
+
+				+slide('01.png')
+				+slide('03.png')
+				+slide('05.png')
+				+slide('02.png')
+				+slide('04.png')
+				+slide('06.png')
+				+slide('07.png')
+				+slide('08.png')
+				+slide('09.png')
+				+slide('10.png')
+				+slide('11.png')
+				+slide('12.png')
+			//- .swiper-button-prev
+			//- .swiper-button-next
+			//- .swiper-pagination
+
+
+
+

@@ -1,0 +1,86 @@
+@use "sass:math";
+
+.slider-two-columns {
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+	@media (max-width: $break_sm) {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+
+.slider-two-columns__container {
+
+	position: relative;
+
+	@media (max-width: $break_sm) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.slider-two-columns__box {
+	width: 100%;
+
+}
+
+.slider-two-columns__list {
+
+}
+
+.slider-two-columns__item {
+}
+
+.slider-two-columns__link {
+}
+
+.slider-two-columns__img {
+	display: block;
+	width: 100%;
+}
+
+.slider-two-columns__next,
+.slider-two-columns__prev {
+	position: absolute;
+	content: '';
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 20;
+	width: 27px;
+	height: 27px;
+	cursor: pointer;
+	background-image: url(../img/popular-arrov.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 27px;
+
+	@media (max-width: $break_md) {
+		display: none;
+	}
+}
+
+.slider-two-columns__next {
+	right: -10px;
+
+	@media (max-width: 1600px) {
+		right: 0;
+	}
+}
+
+.slider-two-columns__prev {
+	left: -10px;
+	transform: translateY(-50%) rotate(180deg);
+
+	@media (max-width: 1600px) {
+		left: 0;
+	}
+}
+
+.slider-two-columns__pagination  {
+	position: absolute;
+	bottom: -20px !important;
+	margin-left: auto;
+	margin-right: auto;
+	// left: calc(50% + 25px) !important;
+}

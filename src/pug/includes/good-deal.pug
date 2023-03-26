@@ -1,0 +1,20 @@
+.good-deal
+	.container.good-deal__container
+		h2.section-header.good-deal__title У нас гибкий подход <span>к&nbsp;каждому клиенту</span>, предоставляем <span>выгодные условия</span> сотрудничества
+		
+		.good-deal__box
+			form.good-deal__form.form(action="#" method="post")
+
+				.input-wrapper
+					input.form__phone(id="good-deal__form-phone" type="tel" name="phone" placeholder="Номер телефона")
+
+				.input-wrapper
+					button.form__btn.btn.btn--grren(type="submit") Отправить заявку
+				
+				.input-wrapper.agreement
+					label(for='agreement').agreement__label
+						input#agreement.form__agreement(name='agreement' type='checkbox' required='' checked='')
+						| Даю согласие на обработку моих персональных данных на условиях, указанных в&nbsp;
+						a(href='#') Политике конфиденциальности
+
+				// <button class="form__btn btn btn--grren" type="submit">Отправить заявку</button>

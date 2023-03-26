@@ -1,0 +1,21 @@
+mixin categoryListItem(src, title)
+	a(href="#").category-list__item
+		img(src="img/category-list/"+src alt="" height="28" width="28").category-list__img
+		span.category-list__title #{title}
+
+mixin categoryListItemActive(src, title)
+	a(href="#").category-list__item.category-list__item--active
+		img(src="img/category-list/"+src, alt="").category-list__img
+		span.category-list__title #{title}
+
+.category-list
+	.full-container.category-list__container
+		.category-list__box
+			+categoryListItemActive('01.png', 'Для персонала', '')
+			+categoryListItem('02.png', 'Для руководителя')
+			+categoryListItem('03.png', 'Мягкая мебель')
+			+categoryListItem('04.png', 'Стулья и кресла')
+			+categoryListItem('05.png', 'Ресепшн')
+			+categoryListItem('06.png', 'Перегородки')
+			+categoryListItem('07.png', 'Для гостиниц')
+			+categoryListItem('08.png', 'Благоустройство офиса')

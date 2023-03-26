@@ -1,0 +1,112 @@
+mixin product(src, title, descr, price)
+	a.catalog__item.product(href="#")
+		.product__box
+			.product__img
+				img(src="img/"+src, alt="")
+			.product__title #{title}
+			.product__descr #{descr}
+			.product__price #{price}
+
+mixin product-sale(sale, src, title, descr, price)
+	a.catalog__item.product(href="#")
+		.product__box
+			.product__badge
+				span.product__sale #{sale}
+			.product__img
+				img(src="img/"+src, alt="")
+			.product__title #{title}
+			.product__descr #{descr}
+			.product__price #{price}
+
+
+
+
+.container
+	.catalog
+
+		+product-sale(
+			'-15%',
+			'product-01.jpg',
+			'"Аполло" Кресло',
+			'(890*850*700)экокожа euroline 924...',
+			'10 600 ₽'
+		)
+
+		+product(
+			'product-02.jpg',
+			'"Аполло" Кресло',
+			'(890*850*700)экокожа euroline 924...',
+			'10 600 ₽'
+		)
+
+		+product(
+			'product-03.jpg',
+			'"Аполло" Кресло',
+			'(890*850*700)экокожа euroline 924...',
+			'10 600 ₽'
+		)
+
+		+product(
+			'product-04.jpg',
+			'"Аполло" Кресло',
+			'(890*850*700)экокожа euroline 924...',
+			'10 600 ₽'
+		)
+
+		+product-sale(
+			'-15%',
+			'product-01.jpg',
+			'"Аполло" Кресло',
+			'(890*850*700)экокожа euroline 924...',
+			'10 600 ₽'
+		)
+
+		+product(
+			'product-02.jpg',
+			'"Аполло" Кресло',
+			'(890*850*700)экокожа euroline 924...',
+			'10 600 ₽'
+		)
+
+		+product(
+			'product-03.jpg',
+			'"Аполло" Кресло',
+			'(890*850*700)экокожа euroline 924...',
+			'10 600 ₽'
+		)
+
+		+product(
+			'product-04.jpg',
+			'"Аполло" Кресло',
+			'(890*850*700)экокожа euroline 924...',
+			'10 600 ₽'
+		)
+
+		+product-sale(
+			'-15%',
+			'product-01.jpg',
+			'"Аполло" Кресло',
+			'(890*850*700)экокожа euroline 924...',
+			'10 600 ₽'
+		)
+
+		+product(
+			'product-02.jpg',
+			'"Аполло" Кресло',
+			'(890*850*700)экокожа euroline 924...',
+			'10 600 ₽'
+		)
+
+		+product(
+			'product-03.jpg',
+			'"Аполло" Кресло',
+			'(890*850*700)экокожа euroline 924...',
+			'10 600 ₽'
+		)
+
+		+product(
+			'product-04.jpg',
+			'"Аполло" Кресло',
+			'(890*850*700)экокожа euroline 924...',
+			'10 600 ₽'
+		)

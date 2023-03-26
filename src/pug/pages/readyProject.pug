@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru-RU")
+	include ../includes/head
+	body
+		include ../includes/preloader
+		include ../includes/header
+		.nav
+			.container.nav__container
+				include ../includes/menu
+				include ../includes/search-btn
+			include ../includes/search-panel
+
+		main
+			include ../includes/breadcrumbs-full
+			.full-container
+				.content
+					h1 Готовые проекты
+					include ../includes/readyProject
+			include ../includes/our-client
+			include ../includes/help
+		include ../includes/footer

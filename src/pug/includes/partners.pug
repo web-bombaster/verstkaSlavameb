@@ -1,0 +1,24 @@
+mixin partner(src, title, href)
+	//- a(href="#").partners__item
+	a(href="../img/partners-reviews/"+href  data-fslightbox="thank-you-letter").partners__item.swiper-slide
+		.partners__img-box
+			img(src="img/partners/"+src alt="" loading="lazy").partners__img
+		.partners__reviews #{title}
+
+
+.partners
+	.full-container.partners__container
+		//- .partners__wrapper
+		.partners__wrapper.swiper
+			//- .partners__list
+			.partners__list.swiper-wrapper
+				+partner('01.png', 'Благодарственное письмо', '01.jpg')
+				+partner('02.png', 'Благодарственное письмо', '02.jpg')
+				+partner('03.png', 'Благодарственное письмо', '03.jpg')
+				+partner('04.png', 'Благодарственное письмо', '01.jpg')
+				+partner('05.png', 'Благодарственное письмо', '02.jpg')
+
+				.partners__item.partners__item--more.swiper-slide
+					a(href="").partners__reviews Смотреть все
+
+			.partners__pagination

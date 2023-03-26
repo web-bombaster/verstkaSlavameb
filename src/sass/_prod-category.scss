@@ -1,0 +1,130 @@
+.prod-category {
+	padding-top: 46px;
+	padding-bottom: 102px;
+
+	@media screen and (max-width: $break_sm) {
+		padding-top: 24px;
+		padding-bottom: 32px;
+	}
+}
+
+.prod-category__container {
+}
+
+.prod-category__box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+	gap: 70px;
+
+	@media screen and (max-width: $break_lg) {
+		gap: 40px;
+	}
+
+	@media screen and (max-width: $break_md) {
+		align-items: flex-start;
+		gap: 20px;
+	}
+	
+	@media screen and (max-width: $break_sm) {
+		// flex-wrap: wrap;
+		display: block;
+	}
+	
+}
+
+.prod-category__img {
+	overflow: hidden;
+	flex-basis: 830px;
+
+	@media screen and (max-width: $break_sm) {
+		margin-bottom: 28px;
+		margin-left: -15px;
+    	margin-right: -15px;
+	}
+
+	img {
+		width: 100%;
+		transition: .25s;
+
+		&:hover {
+			transform: scale(1.015);
+		}
+	}
+}
+
+.prod-category__info {
+	position: relative;
+	flex-basis: 385px;
+	margin-top: -21px;
+
+	@media screen and (max-width: $break_lg) {
+		margin-top: 0;
+	}
+
+	@media screen and (max-width: $break_sm) {
+		flex-basis: 100%;
+	}
+}
+
+.section-header {
+}
+
+.prod-category__title.section-header {
+	@media screen and (max-width: $break_lg) {
+		font-size: 32px;
+	}
+
+	@media screen and (max-width: $break_md) {
+		margin-bottom: 20px;
+		font-size: 26px;
+	}
+
+	@media screen and (max-width: $break_sm) {
+		br {
+			display: none;
+		}
+	}
+}
+
+.prod-category__descr {
+	padding-top: 37px;
+	border-top: 1px solid #E1E1E1;
+
+	@media screen and (max-width: $break_lg) {
+		padding-top: 20px;
+	}
+}
+
+// .prod-category__sub-title {
+// 	margin-top: 0;
+// 	margin-bottom: 10px;
+// 	font-size: 24px;
+// 	line-height: 1.16;
+// 	font-weight: 600;
+
+// 	@media screen and (max-width: $break_lg) {
+// 		font-size: 20px;
+// 	}
+
+// 	@media screen and (max-width: $break_md) {
+// 		font-size: 18px;
+// 	}
+// }
+
+.prod-category__btn {
+	margin-top: 44px;
+
+	@media screen and (max-width: $break_lg) {
+		margin-top: 20px;
+	}
+
+	@media screen and (max-width: $break_md) {
+		margin-top: 10px;
+	}
+	
+	@media screen and (max-width: $break_sm) {
+		margin-top: 14px;
+	}
+}
+

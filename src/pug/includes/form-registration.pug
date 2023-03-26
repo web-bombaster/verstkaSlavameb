@@ -1,0 +1,36 @@
+form(action="#" method="post").registration__form.form
+	.form__columns
+		.input-wrapper
+			input#name.form__name(type='text' name='name' placeholder='Имя*')
+		.input-wrapper
+			input#phone.form__phone(type='tel' name='phone' placeholder='Номер телефона*')
+	.input-wrapper
+		input#email.form__email(type='email' name='email' placeholder='E-mail*')
+
+	p
+		b Данные о компании
+
+	.input-wrapper
+		input#companyName.form__companyName(type='text' name='companyName' placeholder='Название компании*')
+	.form__columns
+		.input-wrapper
+			input#inn.form__inn(type='text' name='inn' placeholder='ИНН')
+		.input-wrapper
+			input#okved.form__okved(type='text' name='okved' placeholder='ОКВЭД')
+	.form__columns
+		.input-wrapper
+			input#actualAddress.form__actualAddress(type='text' name='actualAddress' placeholder='Фактический адрес')
+		.input-wrapper
+			input#legalAddress.form__legalAddress(type='text' name='legalAddress' placeholder='Юридический адрес')
+
+
+
+	//- .input-wrapper
+		textarea#message(name='message' placeholder='Комментарий (необязательно)').form__message
+
+
+	label(for='agreement').agreement__label
+		input#agreement.form__agreement(name='agreement' type='checkbox' required='' checked='')
+		| Даю согласие на обработку моих персональных данных на условиях, указанных в&#32;
+		a(href='#') Политике конфиденциальности
+	button.form__btn.btn.btn--grren(type='submit') Отправить заявку

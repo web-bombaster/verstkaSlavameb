@@ -1,0 +1,126 @@
+.profit {
+    margin-top: 58px;
+    margin-bottom: 58px;
+
+    @media (max-width: $break_sm) {
+        margin-bottom: 35px;
+    }
+}
+
+.profit__container {
+
+}
+
+.profit__box {
+    position: relative;
+    // padding: 54px 63px 106px;
+    padding: 54px 63px 54px;
+    background-color: #F2F2F2;
+
+    @media (max-width: $break_sm) {
+        margin-right: -15px;
+        margin-left: -15px;
+        padding: 40px 25px;
+    }
+
+    @media (max-width: $break_xs) {
+        padding-bottom: 45%;
+    }
+
+    &::after {
+        position: absolute;
+        z-index: 0;
+        content: '';
+        bottom: 0;
+        right: 0;
+
+        width: 33.3%;
+        padding-top: 26.53%;
+
+        background-image: url('../img/profit/profit.png');
+        background-size: cover;
+
+        @media (max-width: $break_lg) {
+            // width: 433px;
+            // height: 345px;
+        }
+
+        @media (max-width: $break_xs) {
+            width: 49.95%;
+            padding-top: 39.795%;
+        }
+    }
+}
+
+.profit__title {
+    margin-bottom: 86px;
+
+    @media (max-width: $break_md) {
+        margin-bottom: 70px;
+    }
+
+    @media (max-width: $break_sm) {
+        margin-bottom: 28px;
+    }
+}
+
+.profit__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 2;
+
+    margin-top: -45px;
+    max-width: 60%;
+
+    @media (max-width: $break_lg) {
+        max-width: 75%;
+    }
+
+    @media (max-width: $break_md) {
+        max-width: 72%;
+    }
+
+    @media (max-width: $break_sm) {
+        margin-top: -20px;
+    }
+
+    @media (max-width: $break_xs) {
+        max-width: 100%;
+    }
+}
+
+.profit__item {
+    position: relative;
+    margin-top: 45px;
+    padding-left: 34px;
+
+    // max-width: 346px;
+    max-width: 48%;
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    @media (max-width: $break_md) {
+        margin-top: 20px;
+    }
+
+    @media (max-width: $break_sm) {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        background-image: url('../img/check.svg');
+        background-size: cover;
+    }
+}

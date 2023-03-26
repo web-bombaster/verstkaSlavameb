@@ -1,0 +1,69 @@
+// Переменные
+// @import "vars";
+
+// Нормализация
+@import '_preloader';
+@import '_normalize';
+
+// Смартгрид и свои миксины
+@import '_smart-grid';
+// @import '_mixins/mixins'; // свои миксины
+
+// Шрифты
+// @import "_fonts";
+
+// Стандартности
+@import '_breadcrumbs'; // Постраничная навигация
+@import '_button'; // Кнопки
+@import "_menu";
+@import "_search";
+@import "_form";
+
+// Свои общие стили
+@import "_main";
+
+// Стили текущего проекта
+@import "_header";
+@import "_home-hero-section";
+@import "_catalog"; // На странице Специальная цена в виде сетки по 4
+@import "_product"; // отдельный товар в каталоге _catalog
+@import "_advantages";
+@import "_popular-categories";
+@import "_prod-category";
+@import "_about-section";
+@import "_help";
+@import "_reviews";
+@import "_partners";
+@import "_benefits";
+@import "_prod-slider";
+@import "_footer";
+@import "_home-content";
+@import "_contacts";
+@import "_category-list";
+@import "_category";
+@import "_collection";
+@import "_profit";
+@import "_projects-slider"; // Реализованные проекты grid to slider
+@import "_privilege";
+@import "_desig-project";
+@import "_good-deal";
+@import "_accordeon";
+@import "_product";
+@import "_collection-card";
+@import "_readyProject"; // готовые проекты, слайдеры с переходом на страницу проекта
+@import "_our-client";
+@import "_banner";
+@import "_text-img";
+@import "_project-page";
+@import "_registration-form";
+@import "_delivery";
+@import "_feedback"; // страница с текстовыми отзывами и формой оставить отзыв
+@import "_contacts-page"; // страница конаткты
+@import "_blog"; // страница блога (список постов)
+@import "_error-404";
+@import "_slider-two-columns"; // Слайдер в 2 колонки, на странице Дизайн-проект бесплатно
+@import "_sale"; // Страница Распродажа, 2 столбца, банеры
+
+// Библиотеки и их кастомизация
+@import "../libs/swiper-bundle.min";
+

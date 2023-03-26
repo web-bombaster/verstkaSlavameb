@@ -1,0 +1,42 @@
+mixin linkToPage(link, title)
+	p
+		a(href=link+".html" target="_blank") #{title}
+
+doctype html
+html(lang="ru-RU")
+	include ../includes/head
+	body
+		.container
+			h1 Верстка сайта ООО «Славянка»:
+			.index
+				
+				p.info Если страничка отображается криво, обновляем ее через CTRL + F5!
+				
+				+linkToPage('home','home - Главная')
+				
+				+linkToPage('category','category - Категория товаров (например, Офисная мебель для персонала)')
+				+linkToPage('subcategory','subcategory - Подкатегории, показывает коллекции товаров выбранной категории')
+				+linkToPage('productItem','productItem - Коллекция - показывает, из чего состоит коллекция')
+				
+				+linkToPage('cpecprice','cpecprice - Специальная цена на выставочные образцы')
+				+linkToPage('sale','sale - Распродажа - общая страница')
+				
+				+linkToPage('readyProject','readyProject - Готовые проекты')
+				+linkToPage('projectsPage','projectsPage - Страница проекта')
+				
+				+linkToPage('aboutCompany','aboutCompany - О компании')
+				+linkToPage('noCart','noCart - Почему у нас нет корзины?')
+				+linkToPage('delivery','delivery - Доставка и сборка')
+				+linkToPage('feedback','feedback - Отзывы - страница с текстовыми отзывами и формой оставить отзыв')
+				+linkToPage('contacts','contacts - страница контакты')
+				
+				+linkToPage('optovikam','optovikam - Оптовикам')
+				+linkToPage('organizations','organizations - Госучреждениям')
+				+linkToPage('clients','clients - Клиентам')
+				+linkToPage('designers','designers - Дизайнерам')
+				+linkToPage('freeDesign','freeDesign - Дизайн-проект бесплатно')
+				
+				+linkToPage('blog','blog - Блог (список постов)')
+				+linkToPage('blog-post','blog-post - страница поста в блоге')
+				
+				+linkToPage('error-404','error-404 - страница ошибка 404')

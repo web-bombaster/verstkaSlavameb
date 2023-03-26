@@ -1,0 +1,173 @@
+@use "sass:math";
+
+.project-page {
+
+}
+
+.project-page__container {
+
+}
+
+.project-page__content {
+
+}
+
+.project-page__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	@media (max-width: $break_sm) {
+		flex-wrap: wrap;
+	}
+}
+
+.project-page__descr {
+	width: 100%;
+	max-width: 46%;
+
+	@media (max-width: $break_lg) {
+		max-width: 55%;
+	}
+
+	@media (max-width: $break_sm) {
+		order: 2;
+		max-width: 100%;
+	}
+
+	&>*:first-child {
+		margin-top: 0;
+	}
+}
+
+.project-page__about {
+	padding: 40px 40px;
+	width: 100%;
+	max-width: 43%;
+
+	background-color: #EEFFCE;
+
+	@media (max-width: $break_md) {
+		padding: 30px;
+		max-width: 40%;
+	}
+
+	@media (max-width: $break_sm) {
+		order: 1;
+		max-width: 100%;
+		margin-bottom: 35px;
+	}
+
+	&>*:first-child {
+		margin-top: 0;
+	}
+
+	a {
+		color: #2C2C2C;
+	}
+}
+
+.project-page__sliders-box {
+	margin-bottom: 66px;
+	display: flex;
+	gap: 18px;
+
+	@media (max-width: $break_sm) {
+		margin-bottom: 37px;
+	}
+}
+
+.pp-big-slider {
+	position: relative;
+	flex-basis: 55.076923076%;
+
+	@media (max-width: $break_xs) {
+		flex-basis: 100%;
+	}
+}
+
+.pp-big-slider__wrapper {
+
+}
+
+.pp-big-slider__item {
+
+}
+
+.pp-big-slider__img {
+	width: 100%;
+	height: auto;
+}
+
+.pp-big-slider__prev,
+.pp-big-slider__next {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 20;
+	width: 27px;
+	height: 27px;
+	cursor: pointer;
+	background-image: url(../img/popular-arrov.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 15px;
+	background-color: rgba(#fff, .8);
+	border-radius: 50%;
+}
+
+.pp-big-slider__prev {
+	left: 12px;
+	transform: translateY(-50%) rotate(180deg);
+}
+
+.pp-big-slider__next {
+	right: 12px;
+}
+
+.pp-big-slider__pagination {
+	position: absolute;
+	z-index: 1;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	.swiper-pagination-bullet {
+		background-color: rgba(#fff, .9) !important;
+	}
+
+	.swiper-pagination-bullet-active {
+		background-color: #fff !important;
+	}
+}
+
+.pp-mini-slider {
+	position: relative;
+	flex-basis: 43.461538461%;
+	max-height: 480px;
+
+	@media (max-width: $break_xs) {
+		display: none;
+	}
+
+	.swiper-slide-thumb-active {
+		border: 3px solid #2C2C2C;
+		box-sizing: border-box;
+	}
+}
+
+.pp-mini-slider__wrapper {
+
+}
+
+.pp-mini-slider__item {
+	max-height: calc(50% - 1/2*18px);
+	height: calc(50% - 1/2*18px) !important;
+	max-width: calc(50% - 1/2*18px);
+}
+
+.pp-mini-slider__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

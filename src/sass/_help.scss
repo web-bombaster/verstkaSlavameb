@@ -1,0 +1,42 @@
+.help {
+	padding-top: 70px;
+	padding-bottom: 73px;
+
+	@media screen and (max-width: $break_sm) {
+		padding-top: 25px;
+		padding-bottom: 52px;
+	}
+}
+.help__container {
+	display: flex;
+	justify-content: space-between;
+	// gap: 65px;
+	gap: 24px;
+
+	@media screen and (max-width: $break_sm) {
+		flex-wrap: wrap;
+		gap: 35px;
+	}
+}
+.help__text {
+	flex-basis: 50%;
+
+	@media screen and (max-width: $break_sm) {
+		flex-basis: 100%;
+	}
+
+	p {
+		max-width: 318px;
+	}
+}
+.help__title {
+	margin-bottom: 23px;
+	max-width: 537px;
+}
+.help__form {
+	flex-basis: 50%;
+
+	@media screen and (max-width: $break_sm) {
+		flex-basis: 100%;
+	}
+}

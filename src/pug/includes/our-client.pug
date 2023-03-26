@@ -1,0 +1,34 @@
+mixin partner(src, title)
+	//- a(href="#").partners__item
+	a(href="#").partners__item
+		.partners__img-box
+			img(src="img/partners/"+src alt="" loading="lazy").partners__img
+		.partners__reviews #{title}
+
+
+.our-client
+	.full-container.our-client__container
+		h2.section-header.our-client____title Наши клиенты
+		.our-client__box
+			.partners__list
+				+partner('01.png', 'Благодарственное письмо')
+				+partner('02.png', 'Благодарственное письмо')
+				+partner('03.png', 'Благодарственное письмо')
+				+partner('04.png', 'Благодарственное письмо')
+				+partner('05.png', 'Благодарственное письмо')
+				+partner('06.png', 'Благодарственное письмо')
+				+partner('07.png', 'Благодарственное письмо')
+				+partner('08.png', 'Благодарственное письмо')
+				+partner('09.png', 'Благодарственное письмо')
+				+partner('10.png', 'Благодарственное письмо')
+				+partner('11.png', 'Благодарственное письмо')
+				+partner('12.png', 'Благодарственное письмо')
+				+partner('13.png', 'Благодарственное письмо')
+				+partner('14.png', 'Благодарственное письмо')
+				+partner('15.png', 'Благодарственное письмо')
+				+partner('16.png', 'Благодарственное письмо')
+				+partner('17.png', 'Благодарственное письмо')
+				+partner('18.png', 'Благодарственное письмо')
+
+			.text-center
+				button.btn.load-more Загрузить еще

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>Славянка</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+    <script src="js/scripts.min.js" defer></script>
+  </head>
+  <body>
+    <div class="visible" id="preloader"></div>
+    <header class="header">
+      <div class="full-container header__container">
+        <button class="header__menu-btn" type="button" aria-label="Меню сайта"><span></span></button>
+        <div class="header__info header-info"><a class="header-info__link no-cart" href="#">Почему у нас нет корзины</a><a class="header-info__link" href="#">Распродажа %</a></div><a class="header__logo logo" href=""><img src="./img/logo.png" alt="">Славянка</a>
+        <div class="header__contacts header-contacts"><a class="header-contacts__phone" href="tel:+78632869977">+7 (863) 286-99-77</a><a class="header-contacts__address" href="#">Ростов-на-Дону<span>, пр-т Шолохова, 16</span></a></div>
+      </div>
+    </header>
+    <div class="nav">
+      <div class="container nav__container">
+        <!-- col nav__col - ul-->
+        <!-- row nav__row - div-->
+        <nav class="nav__box">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link nav__link--open-panel" href="#">Офисная мебель</a>
+              <ul class="col nav__col">
+                <li class="nav__item--title"><a class="nav__link--title" href="#">Для персонала</a>
+                  <ul class="nav__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="link">Эконом</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Стандарт</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Бизнес</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="col nav__col">
+                <li class="nav__item--title"><a class="nav__link--title" href="#">Мягкая мебель</a>
+                  <ul class="nav__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="link">Современная</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Классическая</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="col nav__col">
+                        <li class="nav__item--title"><a class="nav__link--title" href="link">Ресепшн</a></li>
+                        <li class="nav__item--title"><a class="nav__link--title" href="link">Перегородки</a></li>
+                        <li class="nav__item--title"><a class="nav__link--title" href="link">Для гостиниц</a></li>
+              </ul>
+              <ul class="col nav__col">
+                <li class="nav__item--title"><a class="nav__link--title" href="#">Для руководителя</a>
+                  <ul class="nav__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="link">Эконом</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Бизнес</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Премиум</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="col nav__col">
+                <li class="nav__item--title"><a class="nav__link--title" href="#">Стулья и кресла</a>
+                  <ul class="nav__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="link">Дизайнерские</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Компьютерные</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Конференц</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Офисные</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="col nav__col">
+                <li class="nav__item--title"><a class="nav__link--title" href="#">Благоустройство офиса</a>
+                  <ul class="nav__submenu submenu">
+                            <li class="submenu__item"><a class="submenu__link" href="link">Кухни для офиса</a></li>
+                            <li class="submenu__item"><a class="submenu__link" href="link">Металлическая мебель</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+                    <li class="nav__item"><a class="nav__link" href="link">О компании</a></li>
+                    <li class="nav__item"><a class="nav__link" href="link">Доставка и сборка</a></li>
+                    <li class="nav__item"><a class="nav__link" href="link">Готовые проекты</a></li>
+                    <li class="nav__item"><a class="nav__link" href="link">Отзывы</a></li>
+                    <li class="nav__item"><a class="nav__link" href="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="open-search" aria-label="Поиск по сайту"></button>
+      </div>
+      <div class="search">
+        <div class="container search__container">
+          <div class="search__box">
+            <form class="search-form" action="/search" method="GET">
+              <input class="search-field" type="search" name="search" placeholder="Искать, например, кресло компьютерное">
+              <button class="btn-search" type="submit" aria-label="Найти"></button>
+              <button class="search-close" type="button" aria-label="Закрыть панель поиска"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="category-list">
+        <div class="full-container category-list__container">
+          <div class="category-list__box"><a class="category-list__item category-list__item--active" href="#"><img class="category-list__img" src="img/category-list/01.png" alt=""><span class="category-list__title">Для персонала</span></a><a class="category-list__item" href="#"><img class="category-list__img" src="img/category-list/02.png" alt="" height="28" width="28"><span class="category-list__title">Для руководителя</span></a><a class="category-list__item" href="#"><img class="category-list__img" src="img/category-list/03.png" alt="" height="28" width="28"><span class="category-list__title">Мягкая мебель</span></a><a class="category-list__item" href="#"><img class="category-list__img" src="img/category-list/04.png" alt="" height="28" width="28"><span class="category-list__title">Стулья и кресла</span></a><a class="category-list__item" href="#"><img class="category-list__img" src="img/category-list/05.png" alt="" height="28" width="28"><span class="category-list__title">Ресепшн</span></a><a class="category-list__item" href="#"><img class="category-list__img" src="img/category-list/06.png" alt="" height="28" width="28"><span class="category-list__title">Перегородки</span></a><a class="category-list__item" href="#"><img class="category-list__img" src="img/category-list/07.png" alt="" height="28" width="28"><span class="category-list__title">Для гостиниц</span></a><a class="category-list__item" href="#"><img class="category-list__img" src="img/category-list/08.png" alt="" height="28" width="28"><span class="category-list__title">Благоустройство офиса</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <div class="full-container breadcrumbs__container">
+          <!--/| Вы здесь:&#32;--><a href="#" itemprop="url"><span itemprop="title">Главная</span></a>	 / <a href="#" itemprop="url"><span itemprop="title">Распродажа</span></a>	 / <span itemprop="title">Специальная цена на выставочные образцы</span>
+          <!--Главная / Распродажа / Специальная цена на выставочные образцы-->
+        </div>
+      </div>
+      <section class="collection">
+        <div class="full-container collection__container">
+          <h2 class="section-header section-header--mini collection__title">Популярные коллекции</h2>
+          <div class="collection__box"><a class="collection__item" href="#">
+                    <div class="collection__img-box"><img class="collection__img" src="img/collection/05.jpg" alt=""></div><span class="collection__item-title">Канц</span></a><a class="collection__item" href="#">
+                    <div class="collection__img-box"><img class="collection__img" src="img/collection/06.jpg" alt=""></div><span class="collection__item-title">Монолит</span></a><a class="collection__item" href="#">
+                    <div class="collection__img-box"><img class="collection__img" src="img/collection/07.jpg" alt=""></div><span class="collection__item-title">Фея</span></a><a class="collection__item" href="#">
+                    <div class="collection__img-box"><img class="collection__img" src="img/collection/08.jpg" alt=""></div><span class="collection__item-title">Эко</span></a><a class="collection__item" href="#">
+                    <div class="collection__img-box"><img class="collection__img" src="img/collection/09.jpg" alt=""></div><span class="collection__item-title">Дублин</span></a><a class="collection__item" href="#">
+                    <div class="collection__img-box"><img class="collection__img" src="img/collection/10.jpg" alt=""></div><span class="collection__item-title">Канцлер</span></a>
+          </div>
+        </div>
+      </section>
+      <div class="profit">
+        <div class="container profit__container">
+          <div class="profit__box">
+            <h2 class="section-header profit__title">С нами выгодно сотрудничать</h2>
+            <ul class="profit__list">
+              <li class="profit__item">Бесплатная сборка мебели</li>
+              <li class="profit__item">Привозим под заказ</li>
+              <li class="profit__item">Бесплатная доставка</li>
+              <li class="profit__item">Бесплатный 3D дизайн-проект</li>
+              <li class="profit__item">У нас скидки, акции и другие программы лояльности</li>
+              <li class="profit__item">В нашем каталоге большой товарный запас мебели</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="projects-slider">
+        <div class="full-container projects-slider__container">
+          <h2 class="section-header projects-slider__title">Реализованные проекты</h2>
+          <div class="projects-slider__box swiper">
+            <ul class="projects-slider__list swiper-wrapper">
+                    <li class="projects-slider__item swiper-slide"><a class="projects-slider__link" href="#"><img class="projects-slider__img" src="img/projects-slider/01.jpg" alt="" loading="lazy"><span class="projects-slider__name">«Вертол Девелопмент»</span></a></li>
+                    <li class="projects-slider__item swiper-slide"><a class="projects-slider__link" href="#"><img class="projects-slider__img" src="img/projects-slider/02.jpg" alt="" loading="lazy"><span class="projects-slider__name">«Дон Эко»</span></a></li>
+                    <li class="projects-slider__item swiper-slide"><a class="projects-slider__link" href="#"><img class="projects-slider__img" src="img/projects-slider/03.jpg" alt="" loading="lazy"><span class="projects-slider__name">«ИнтехГеоТранс-Юг»</span></a></li>
+                    <li class="projects-slider__item swiper-slide"><a class="projects-slider__link" href="#"><img class="projects-slider__img" src="img/projects-slider/04.jpg" alt="" loading="lazy"><span class="projects-slider__name">«Южные Медицинские Системы»</span></a></li>
+            </ul>
+            <div class="projects-slider__pagination"></div>
+          </div><a class="btn projects-slider__btn" href="#">Смотреть проекты</a>
+        </div>
+      </section>
+      <div class="privilege">
+        <div class="container privilege__container">
+          <div class="privilege__box"> <a class="privilege__item privilege__item--bg-img b-lazy" href="#" data-src="../img/privilege/privilege.jpg">
+              <div class="privilege__title">Оптовикам</div>
+              <div class="privilege__descr">Индивидуальная система скидок</div>
+              <button class="privilege__btn btn-arrow"></button></a><a class="privilege__item privilege__item--bg-green b-lazy" href="#" data-src="../img/privilege/bg-green.svg">
+              <div class="privilege__title">Дизайнерам</div>
+              <div class="privilege__descr">Широкий ассортимент офисной мебели</div>
+              <button class="privilege__btn btn-arrow"></button></a><a class="privilege__item privilege__item--bg-green b-lazy" href="#" data-src="../img/privilege/bg-green.svg">
+              <div class="privilege__title">Госучреждениям</div>
+              <div class="privilege__descr">Опыт участия в закупках более 15 лет</div>
+              <button class="privilege__btn btn-arrow"></button></a>
+            <div class="privilege__item privilege__item--bg-white">
+              <div class="privilege__title">Работаем <span>с&nbsp;крупнейшими</span> производителями</div>
+              <div class="privilege__descr">Работаем с проверенными отечественными и зарубежными поставщиками</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="home-content">
+        <div class="container home-content__container">
+          <h2 class="section-header home-content__title">Главный предмет рабочего места - стол</h2>
+          <div class="home-content__box two-columns">
+            <p>Любой руководитель старается обеспечить работникам комфортные условия труда. В просторном, светлом и удобном офисе легче и эффективнее работается. Именно поэтому во многих компаниях есть специальные комнаты с игровой приставкой, настольными играми - работники могут в перерыв отвлечься от задач и отдохнуть, чтобы вернуться на рабочее место с новыми силами.</p>
+            <div class="hidden-text">
+              <p>Важно тщательно организовать рабочие места - подобрать качественную и функциональную мебель для сотрудников. Если офис небольшой, но нужно разместить там много людей, придется постараться. Чтобы помочь бизнесу решить эти задачи, ведущие производители разработали модели удобных и компактных столов, шкафов, тумб и офисных кресел. Если тщательно подойти к выбору обстановки, можно на небольшом пространстве разместить несколько рабочих мест без потери комфортности.</p>
+              <p>Не стоит забывать об обустройстве кабинета руководителя, приемных, залов совещаний. Обстановка этих помещений – визитная карточка фирмы, символизирующая ее благополучие, статус, вкус владельца. Удобная стойка на ресепшене, диваны в зоне ожидания, журнальные столики, тумбы и шкафы придадут законченный вид.</p>
+              <h3>Мебель для сотрудников</h3>
+              <p>В среднем человек работает 40 часов в неделю. Мебель должна отвечать требованиям безопасности, комфорта, экологичности. Компания «Славянка» приглашает покупателей приобрести комплекты для обустройства рабочих мест по низким ценам.</p>
+              <p>Ассортимент мебели для персонала представлен в салоне, расположенном на пр. Шолохова 16. Также вы можете удобно выбрать модели в нашем интернет-каталоге. Он логично структурирован, там есть фото и описание товара.</p>
+              <p>В нашем магазине в Ростове-на-Дону можно купить столы для работы различных видов и ценовой категории:</p>
+              <ul>
+                <li>элегантные, представительские для приемной. На них с комфортом разместятся гости компании, ожидающие приема;</li>
+                <li>рабочие письменные и компьютерные прямоугольной или угловой формы, оснащенные надставками, дополнительными тумбами, полками;</li>
+                <li>массивные модели для совещаний с плавными формами, рассчитанные на размещение большого количества человек.</li>
+              </ul>
+              <h3>Где купить столы для персонала?</h3>
+              <p>Вы можете купить удобные и эстетичные комплекты мебели эконом-класса по низкой цене в выставочном зале компании на пр. Шолохова 16. Менеджеры помогут сделать выбор, разъяснят характеристики изделия, организуют доставку и сборку. Если понравившегося комплекта нет в наличии, наши сотрудники сделают заказ или предложат альтернативный вариант.</p>
+            </div>
+            <button class="show-text">Читать далее</button>
+          </div>
+        </div>
+      </section>
+      <div class="reviews">
+        <div class="full-container reviews__full-container">
+          <div class="container reviews__container">
+            <div class="reviews__list swiper">
+              <div class="swiper-wrapper reviews__wrapper">
+                <div class="reviews__item swiper-slide">
+                  <div class="reviews__info">
+                    <div class="reviews__text b-lazy" data-src="../img/reviews.svg">Компания Славянка оснастила офисной и мягкой мебелью кабинеты руководителей и персонала в нашем новом салоне. Все сделали быстро и в срок!</div>
+                    <div class="reviews__name">Иванов Иван</div>
+                    <div class="reviews__post">Руководитель «ААА моторс Jaguar Land Rover»</div>
+                  </div><a class="reviews__video" href="https://www.youtube.com/watch?v=GbDI469JqFU" data-fslightbox="reviews-item"><img class="reviews__img" src="img/reviews/01.jpg" alt="" loading="lazy">
+                    <div class="reviews__descr">Отзыв от руководителя «ААА моторс Jaguar Land Rover»</div></a>
+                </div>
+                <div class="reviews__item swiper-slide">
+                  <div class="reviews__info">
+                    <div class="reviews__text">Компания Славянка оснастила офисной и мягкой мебелью кабинеты руководителей и персонала в нашем новом салоне. Все сделали быстро и в срок!</div>
+                    <div class="reviews__name">Иванов Иван</div>
+                    <div class="reviews__post">Руководитель «ААА моторс Jaguar Land Rover»</div>
+                  </div><a class="reviews__video" href="https://www.youtube.com/watch?v=hJWDTyKYcRE" data-fslightbox="reviews-item"><img class="reviews__img" src="img/reviews/01.jpg" alt="" loading="lazy">
+                    <div class="reviews__descr">Отзыв от руководителя «ААА моторс Jaguar Land Rover»</div></a>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__prev"></div>
+            <div class="reviews__next"></div>
+          </div>
+        </div>
+      </div>
+      <div class="partners">
+        <div class="full-container partners__container">
+          <div class="partners__wrapper swiper">
+            <div class="partners__list swiper-wrapper"><a class="partners__item swiper-slide" href="../img/partners-reviews/01.jpg" data-fslightbox="thank-you-letter">
+                      <div class="partners__img-box"><img class="partners__img" src="img/partners/01.png" alt="" loading="lazy"></div>
+                      <div class="partners__reviews">Благодарственное письмо</div></a><a class="partners__item swiper-slide" href="../img/partners-reviews/02.jpg" data-fslightbox="thank-you-letter">
+                      <div class="partners__img-box"><img class="partners__img" src="img/partners/02.png" alt="" loading="lazy"></div>
+                      <div class="partners__reviews">Благодарственное письмо</div></a><a class="partners__item swiper-slide" href="../img/partners-reviews/03.jpg" data-fslightbox="thank-you-letter">
+                      <div class="partners__img-box"><img class="partners__img" src="img/partners/03.png" alt="" loading="lazy"></div>
+                      <div class="partners__reviews">Благодарственное письмо</div></a><a class="partners__item swiper-slide" href="../img/partners-reviews/01.jpg" data-fslightbox="thank-you-letter">
+                      <div class="partners__img-box"><img class="partners__img" src="img/partners/04.png" alt="" loading="lazy"></div>
+                      <div class="partners__reviews">Благодарственное письмо</div></a><a class="partners__item swiper-slide" href="../img/partners-reviews/02.jpg" data-fslightbox="thank-you-letter">
+                      <div class="partners__img-box"><img class="partners__img" src="img/partners/05.png" alt="" loading="lazy"></div>
+                      <div class="partners__reviews">Благодарственное письмо</div></a>
+              <div class="partners__item partners__item--more swiper-slide"><a class="partners__reviews" href="">Смотреть все</a></div>
+            </div>
+            <div class="partners__pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="help" id="help">
+        <div class="container help__container">
+          <div class="help__text">
+            <h2 class="section-header help__title">Хотите уточнить стоимость или задать вопрос?</h2>
+            <p>Наши менеджеры на связи и готовы помочь в кратчайшие сроки</p>
+          </div>
+          <form class="help__form form" action="#" method="post">
+            <div class="input-wrapper">
+              <input class="form__phone" id="phone" type="tel" name="phone" placeholder="Номер телефона">
+            </div>
+            <div class="input-wrapper">
+              <input class="form__email" id="email" type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="input-wrapper">
+              <textarea class="form__message" id="message" name="message" placeholder="Комментарий (необязательно)"></textarea>
+            </div>
+            <div class="input-wrapper agreement">
+              <label class="agreement__label" for="agreement">
+                <input class="form__agreement" id="agreement" name="agreement" type="checkbox" required="" checked="">Даю согласие на обработку моих персональных данных на условиях, указанных в&nbsp;<a href="#">Политике конфиденциальности</a>
+              </label>
+            </div>
+            <button class="form__btn btn btn--grren" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="full-container footer__container">
+        <div class="footer__col footer__first"><a class="footer__logo logo" href="#"><img src="img/logo.png" alt="">Славянка</a>
+          <div class="footer__copy" data-da="footer__container,last,768">2022 © ООО «Славянка» - Офисная мебель</div>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">Клиентам</div>
+          <ul class="footer__menu footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Офисная мебель</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Доставка и сборка</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Готовые проекты</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Отзывы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Распродажа %</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">Сотрудничество</div>
+          <ul class="footer__menu footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Оптовикам</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Госучреждениям</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Дизайнерам</a></li>
+          </ul>
+        </div>
+        <div class="footer__col" data-da="footer__first,1,992">
+          <ul class="footer__menu footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link no-cart" href="#">Почему у нас нет корзины</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer-contacts"><a class="footer__fhone" href="tel:+78632869977">+7 (863) 286-99-77</a><span class="footer__fhone-text">Многоканальный</span>
+          <p>Ростов-на-Дону, пр-т Шолохова, 16</p>
+          <div class="footer__map" data-da="footer__container,5,768">
+            <iframe class="b-lazy" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A1d24ac55db3ebcd2b7232dcd9d6b1d699f765a0df12a3a375627ce5235c569a9&amp;source=constructor" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

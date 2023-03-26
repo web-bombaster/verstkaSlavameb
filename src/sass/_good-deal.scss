@@ -1,0 +1,101 @@
+.good-deal {
+	margin-top: 100px;
+	margin-bottom: 120px;
+
+	@media screen and (max-width: $break_md) {
+		margin-top: 55px;
+		margin-bottom: 45px;
+	}
+
+		.section-header {
+			max-width: 990px;
+		}
+}
+
+.good-deal__container {
+
+}
+
+.good-deal__title {
+	// max-width: 100%;
+	max-width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+
+
+	font-size: 60px;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	color: #858585;
+
+	text-align: center;
+
+	span {
+		color: #2C2C2C;
+	}
+}
+
+.good-deal__box {
+
+}
+
+.good-deal__form {
+	max-width: 775px;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 15px;
+
+	@media screen and (max-width: $break_sm) {
+		flex-direction: column;
+	}
+
+	.input-wrapper {
+		width: calc(50% - 1/2*15px);
+
+		@media screen and (max-width: $break_sm) {
+			width: 70%;
+		}
+
+		@media screen and (max-width: $break_xs) {
+			width: 90%;
+		}
+
+		&.agreement {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	.form__phone {
+		// flex-basis: calc(50% - 1/2*15px);
+		// width: calc(50% - 1/2*15px);
+		width: 100%;
+		// margin-bottom: 0;
+	}
+
+	.form__btn {
+		// flex-basis: calc(50% - 1/2*15px);
+		// width: calc(50% - 1/2*15px);
+		margin-top: 0;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+
+	.agreement__label {
+		margin-top: 25px;
+		flex-basis: 100%;
+		text-align: center;
+
+
+	}
+}
+
+
+

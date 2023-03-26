@@ -1,0 +1,16 @@
+mixin collectionItem(src, title)
+	a(href="#").collection__item
+		.collection__img-box
+			img(src="img/collection/"+src, alt="").collection__img
+		span.collection__item-title #{title}
+
+section.collection
+	.full-container.collection__container
+		h2.section-header.section-header--mini.collection__title Популярные коллекции
+		.collection__box
+			+collectionItem('05.jpg', 'Канц')
+			+collectionItem('06.jpg', 'Монолит')
+			+collectionItem('07.jpg', 'Фея')
+			+collectionItem('08.jpg', 'Эко')
+			+collectionItem('09.jpg', 'Дублин')
+			+collectionItem('10.jpg', 'Канцлер')

@@ -1,0 +1,14 @@
+form(action="#" method="post").feedback__form.form
+	.form__title Оставить отзыв
+	.input-wrapper
+		input#name.form__name(type='text' name='name' placeholder='Ваше имя*')
+	.input-wrapper
+		input#company.form__company(type='text' name='company' placeholder='Название компании (необязательно)')
+	.input-wrapper
+		textarea#message(name='message' placeholder='Текст отзыва').form__message
+	.input-wrapper.agreement
+		label(for='agreement').agreement__label
+			input#agreement.form__agreement(name='agreement' type='checkbox' required='' checked='')
+			| Даю согласие на обработку моих персональных данных на условиях, указанных в&nbsp;
+			a(href='#') Политике конфиденциальности
+	button.form__btn.btn.btn--grren(type='submit') Отправить

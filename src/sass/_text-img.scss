@@ -1,0 +1,59 @@
+@use "sass:math";
+
+.text-img {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    @media (max-width: $break_sm) {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .btn {
+        margin-top: 44px;
+
+        @media (max-width: $break_sm) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.text-img__container {
+
+}
+
+.text-img__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $break_sm) {
+        align-items: flex-start;
+    }
+}
+
+.text-img__text {
+    width: 100%;
+    max-width: 56%;
+
+    @media (max-width: $break_sm) {
+        max-width: 100%;
+    }
+}
+
+.section-header {
+    max-width: 570px;
+}
+
+.text-img__title {
+
+}
+
+.text-img__img {
+    width: 100%;
+    max-width: 34%;
+
+    @media (max-width: $break_sm) {
+        display: none;
+    }
+}

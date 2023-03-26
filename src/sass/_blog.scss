@@ -1,0 +1,158 @@
+@use "sass:math";
+
+.blog {}
+
+.blog__container {}
+
+.blog__posts {}
+
+.blog-posts {}
+
+.blog-posts__list {}
+
+.blog-posts__item {}
+
+.blog-posts__more {}
+
+
+.post-item {
+	padding-top: 35px;
+	padding-bottom: 35px;
+
+	display: flex;
+	justify-content: space-between;
+	gap: 48px;
+
+	border-bottom: 1px solid #DBDBDB;
+
+	@media (max-width: $break_md) {
+		align-items: flex-start;
+		gap: 20px;
+	}
+
+	@media (max-width: $break_xs) {
+		flex-wrap: wrap;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		&:last-child {
+			border: none;
+		}
+	}
+
+	&:first-child {
+		padding-top: 15px;
+
+		@media (max-width: $break_xs) {
+			padding-top: 0;
+		}
+	}
+}
+
+.post-item__img-box {
+	flex-basis: 32%;
+	overflow: hidden;
+
+	@media (max-width: $break_xs) {
+		flex-basis: 100%;
+	}
+}
+
+.post-item__img {
+	transition: .25s;
+
+	.post-item:hover & {
+		transform: scale(1.015);
+	}
+}
+
+.post-item__info {
+	position: relative;
+	padding-top: 5px;
+	padding-bottom: 40px;
+	flex-basis: calc(100% - 32% - 48px);
+
+	@media (max-width: $break_md) {
+		padding-top: 0;
+		flex-basis: calc(100% - 32% - 20px);
+	}
+
+	@media (max-width: $break_xs) {
+		flex-basis: 100%;
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		left: 0;
+		bottom: 5px;
+
+		width: 46px;
+		height: 16px;
+
+		background-image: url('../img/arrow-46-16.svg');
+		background-size: cover;
+		background-position: center right;
+
+		transition: .25s;
+
+		@media (max-width: $break_sm) {
+			width: 33px;
+		}
+
+		.post-item:hover & {
+			left: 15px;
+		}
+	}
+}
+
+.post-item__info-box {
+	max-width: 586px;
+}
+
+.post-item__date {
+	margin-bottom: 7px;
+
+	font-size: 14px;
+	color: #858585;
+
+	@media (max-width: $break_sm) {
+		font-size: 13px;
+	}
+}
+
+.post-item__title {
+	margin-bottom: 10px;
+
+	font-family: 'Raleway', sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+
+	transition: .25s;
+
+	@media (max-width: $break_sm) {
+		font-size: 20px;
+	}
+
+	.post-item:hover & {
+		color: #A3DA37;
+	}
+}
+
+.post-item__descr {
+	font-size: 15px;
+}
+
+.blog-post__content {
+	max-width: 754px;
+}
+
+.blog-post__img {
+	margin-top: 35px;
+	margin-bottom: 35px;
+
+	@media (max-width: $break_sm) {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,17 @@
+mixin projectsSlider(src, title)
+	li.projects-slider__item.swiper-slide
+		a(href="#").projects-slider__link
+			img(src="img/projects-slider/"+src alt="" loading="lazy").projects-slider__img
+			span.projects-slider__name #{title}
+
+section.projects-slider
+	.full-container.projects-slider__container
+		h2.section-header.projects-slider__title Реализованные проекты
+		.projects-slider__box.swiper
+			ul.projects-slider__list.swiper-wrapper
+				+projectsSlider('01.jpg', '«Вертол Девелопмент»')
+				+projectsSlider('02.jpg', '«Дон Эко»')
+				+projectsSlider('03.jpg', '«ИнтехГеоТранс-Юг»')
+				+projectsSlider('04.jpg', '«Южные Медицинские Системы»')
+			.projects-slider__pagination
+		a(href="#").btn.projects-slider__btn Смотреть проекты

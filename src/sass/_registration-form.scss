@@ -1,0 +1,45 @@
+.registration {
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+	@media (max-width: $break_sm) {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+
+.registration-form__container {
+	display: flex;
+	justify-content: space-between;
+	gap: 65px;
+
+	@media screen and (max-width: $break_sm) {
+		flex-wrap: wrap;
+		gap: 35px;
+	}
+}
+
+.registration-form__text {
+	flex-basis: 50%;
+
+	@media screen and (max-width: $break_sm) {
+		flex-basis: 100%;
+	}
+
+	p {
+		max-width: 318px;
+	}
+}
+
+.registration-form__title {
+	margin-bottom: 23px;
+	max-width: 537px;
+}
+
+.registration-form {
+	flex-basis: 50%;
+
+	@media screen and (max-width: $break_sm) {
+		flex-basis: 100%;
+	}
+}

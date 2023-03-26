@@ -1,0 +1,172 @@
+.reviews {
+
+}
+.reviews__container {
+	position: relative;
+}
+.reviews__full-container.full-container {
+	padding-top: 98px;
+	padding-bottom: 106px;
+	background-color: #F2F2F2;
+
+
+
+	@media screen and (max-width: $break_md) {
+		padding-top: 51px;
+		padding-bottom: 61px;
+	}
+}
+.reviews__list {
+}
+.reviews__item {
+	min-width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+
+	@media screen and (max-width: $break_lg) {
+		flex-wrap: wrap;		
+	}
+}
+.reviews__info {
+	flex-basis: 375px;
+	padding-right: 15px;
+
+	display: flex;
+	flex-direction: column;
+
+	@media screen and (max-width: $break_lg) {
+		flex-basis: 100%;
+		order: 2;
+	}
+}
+.reviews__text {
+	padding-top: 60px;
+	padding-bottom: 35px;	
+
+	font-size: 24px;
+	font-weight: 500;
+
+	background-image: url('../img/reviews.svg');
+	background-size: 43px 30px;
+	background-position: top left;
+	background-repeat: no-repeat;
+
+	@media screen and (max-width: $break_sm) {
+		padding-top: 50px;
+		padding-bottom: 30px;
+		font-size: 20px;
+	}
+}
+.reviews__name {
+	max-width: 233px;
+	margin-top: auto;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+.reviews__post {
+	max-width: 233px;
+	line-height: 1.2;
+	color: #2C2C2C;
+}
+.reviews__video {
+	position: relative;
+	flex-basis: 733px;
+	transition: .25s;
+
+	@media screen and (max-width: $break_lg) {
+		flex-basis: 100%;
+		margin-bottom: 36px;
+	}
+
+	@media screen and (max-width: $break_md) {
+	}
+
+	&:hover {
+		transform: scale(1.01);
+	}
+
+	&:hover::before {
+		transform: translate(-50%, -50%) scale(1.05);
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		width: 87px;
+		height: 87px;
+		border-radius: 50%;
+
+		background-image: url(../img/play.svg);
+		background-size: cover;
+		transition: .25s;
+
+		z-index: 1;
+
+		@media screen and (max-width: $break_sm) {
+			width: 52px;
+			height: 52px;
+		}
+	}
+}
+.reviews__img {
+	width: 100%;
+}
+.reviews__descr {
+	position: absolute;
+	left: 14px;
+	bottom: 16px;
+
+	padding: 28px 24px;
+	max-width: 266px;
+	background-color: rgba(#fff, .8);
+
+	font-weight: 500;
+	line-height: 1.2;
+
+	@media screen and (max-width: $break_md) {
+		padding: 20px 15px;
+	}
+
+	@media screen and (max-width: $break_sm) {
+		padding: 10px;
+	}
+}
+
+.reviews__next, .reviews__prev {
+    position: absolute;
+    content: '';
+	top: 50%;
+	transform: translateY(-50%);
+    z-index: 20;
+    
+	width: 27px;
+    height: 27px;
+    cursor: pointer;
+
+    background-image: url(../img/popular-arrov.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 27px;
+}
+
+.reviews__next {
+	right: -20px;
+
+	@media screen and (max-width: $break_sm) {
+		right: -10px;
+	}
+}
+.reviews__prev {
+	left: -20px;
+	transform: translateY(-50%) rotate(180deg);
+
+	@media screen and (max-width: $break_sm) {
+		left: -10px;
+	}
+}
+
